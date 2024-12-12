@@ -1,7 +1,7 @@
 # jokes_application_flutter
 
-Simple flutter application that lets you choose a type of joke and shows jokes from that type. 
-as well as a random joke screen, 
+A simple Flutter application that lets users select a type of joke (e.g., programming, general, etc.) and view a list of jokes from that selected type. The app also includes a "Random Joke" screen where users can see a random joke.
+
 ![Simulator Screenshot - iPhone 16 - 2024-12-12 at 16 22 11](https://github.com/user-attachments/assets/399f54d8-5a03-4cdb-8ada-dd516c10d478)
 ![Simulator Screenshot - iPhone 16 - 2024-12-12 at 16 22 17](https://github.com/user-attachments/assets/77b9bcf6-c4dd-497d-83a8-10856c65dab0)
 ![Simulator Screenshot - iPhone 16 - 2024-12-12 at 16 22 35](https://github.com/user-attachments/assets/c3b4e238-0660-4db6-86b4-523f550d0324)
