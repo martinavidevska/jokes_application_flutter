@@ -3,11 +3,6 @@ import 'package:http/http.dart' as http;
 
 class ApiService{
 
-  static Future<http.Response> getPokemonFromPokeAPI() async {
-    var response = await http.get(Uri.parse("https://pokeapi.co/api/v2/pokemon?limit=250"));
-    print("Response: ${response.body}");
-    return response;
-  }
   static Future<List<String>> getJokeTypes() async{
     var response = await http.get(Uri.parse("https://official-joke-api.appspot.com/types"));
     return List<String>.from(jsonDecode(response.body));
