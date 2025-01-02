@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:jokes_application_flutter/screens/favorites_jokes.dart';
 import 'package:jokes_application_flutter/screens/joke_list_screen.dart';
 import 'package:jokes_application_flutter/screens/random_joke.dart';
 import 'package:jokes_application_flutter/services/api_service.dart';
 import 'package:jokes_application_flutter/widgets/joke_type_card.dart';
 
 class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
+
   @override
   _MainScreenState createState() => _MainScreenState();
 }
@@ -33,18 +36,30 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Joke Types"),
+        title: const Text("Joke Types"),
         actions: [
           TextButton(
               onPressed: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => RandomJokeScreen(),
+                      builder: (context) => const RandomJokeScreen(),
                     ));
               },
               child: const Text(
                 "Random Joke",
+                style: TextStyle(color: Colors.black),
+              )),
+          TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const FavoriteJokesScreen(),
+                    ));
+              },
+              child: const Text(
+                "Favorite Joke",
                 style: TextStyle(color: Colors.black),
               )),
         ],
@@ -64,7 +79,7 @@ class _MainScreenState extends State<MainScreen> {
           ),
           Expanded(
             child: GridView.builder(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 crossAxisSpacing: 10,

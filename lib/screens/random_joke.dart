@@ -4,7 +4,7 @@ import 'package:jokes_application_flutter/services/api_service.dart';
 import 'package:jokes_application_flutter/widgets/joke_card.dart';
 
 class RandomJokeScreen extends StatefulWidget {
-  const RandomJokeScreen({Key? key}) : super(key: key);
+  const RandomJokeScreen({super.key});
 
   @override
   _RandomJokeScreenState createState() => _RandomJokeScreenState();
@@ -49,10 +49,7 @@ class _RandomJokeScreenState extends State<RandomJokeScreen> {
                   ? const Center(child: Text("No joke available"))
                   : Padding(
                       padding: const EdgeInsets.all(16.0),
-                      child: JokeCard(
-                        setup: joke!.setup,
-                        punchline: joke!.punchline,
-                      ),
+                      child: JokeCard(joke: joke!),
                     ),
     );
   }

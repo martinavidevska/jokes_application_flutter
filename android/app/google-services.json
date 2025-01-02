@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "494630830510",
+    "project_id": "jokesapplication-34c42",
+    "storage_bucket": "jokesapplication-34c42.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494630830510:android:ffa81037f8d2bdddba883f",
+        "android_client_info": {
+          "package_name": "com.finki.mk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBcnWwq20rFepIds0gudrNwoGYyLLL0ak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
