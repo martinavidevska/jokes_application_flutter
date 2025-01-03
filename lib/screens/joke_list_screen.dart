@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jokes_application_flutter/models/joke_model.dart';
 import 'package:jokes_application_flutter/widgets/joke_card.dart';
 import 'package:jokes_application_flutter/providers/joke_provider.dart';
 import 'package:provider/provider.dart';

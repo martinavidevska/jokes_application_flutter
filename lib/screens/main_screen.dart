@@ -4,6 +4,7 @@ import 'package:jokes_application_flutter/screens/joke_list_screen.dart';
 import 'package:jokes_application_flutter/screens/random_joke.dart';
 import 'package:jokes_application_flutter/services/api_service.dart';
 import 'package:jokes_application_flutter/widgets/joke_type_card.dart';
+import 'package:jokes_application_flutter/services/notification-service.dart'; // Make sure to import your notification service
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -62,6 +63,15 @@ class _MainScreenState extends State<MainScreen> {
                 "Favorite Joke",
                 style: TextStyle(color: Colors.black),
               )),
+          TextButton(
+            onPressed: () async {
+              await NotificationService.showNotification();
+            },
+            child: const Text(
+              'Show Joke Notification',
+              style: TextStyle(color: Colors.black),
+            ),
+          ),
         ],
       ),
       body: Column(
